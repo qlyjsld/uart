@@ -1,0 +1,15 @@
+[options]
+mode prove
+depth 128
+
+[engines]
+smtbmc
+
+[script]
+read -formal top.v
+read -formal txuart.v
+prep -top top
+
+[files]
+top.v
+txuart.v
